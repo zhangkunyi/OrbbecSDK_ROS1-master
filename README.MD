@@ -1,3 +1,13 @@
+# IMU Synchronizer [modified by zky 2023.10.7]
+Open the gemini2 depth camera using nodelet
+```bash
+roslaunch orbbec_camera gemini2_nodelet.launch
+```
+Note:
+- `enable_imu_sync`: Synchronize `accel/sample` and `gyro/sample` using the ApproximateTime time synchronization mechanism.
+- `accel_rate` and `gyro_rate` should preferably be consistent
+- After using rostopic to display the data/frequency/type etc. of `accel/sample` and `gyro/sample`, the node needs to be restarted to continue using `imu/sample`.
+
 # Orbbec ROS SDK
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges) ![version](https://img.shields.io/badge/version-1.3.5-green)
 

@@ -1,5 +1,5 @@
 # IMU Synchronizer [modified by zky 2023.10.7]
-使用nodelet节点打开 gemini2 深度相机
+使用 nodelet 打开 gemini2 深度相机
 ```bash
 roslaunch orbbec_camera gemini2_nodelet.launch
 ```
